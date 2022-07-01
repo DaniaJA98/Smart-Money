@@ -12,23 +12,25 @@ export default function Navbar() {
                 <Container>
                     <Toolbar disableGutters>
                         <Typography
-                            variant='h6'
-                            sx={{ flexGrow: 1 }}
+                            variant='h1'
+                            sx={{ flexGrow: 1, }}
+                            align="center"
                         >
                             <Link to="/" style={{ textDecoration: 'none', color: '#000' }} >
                                 Smart Money
                             </Link>
                         </Typography>
-                        <Button
+                        {/* <Button
                             variant='contained'
                             color='primary'
                             onClick={() => navigate("/operations")}
                         >
                             Operations
-                        </Button>
+                        </Button> */}
                     </Toolbar>
                 </Container>
             </AppBar>
         </Box>
+
     )
 }

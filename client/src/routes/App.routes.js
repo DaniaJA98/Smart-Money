@@ -1,14 +1,15 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Menu from "./components/Navbar"
+import Menu from "../components/Navbar"
 import { Container } from '@mui/material'
-import Home from './components/Home'
-import Operations from './components/Operations'
+import Home from '../pages/Home'
+import Operations from '../pages/Operations'
+import '../index.css'
 
 export default function App() {
   return (
     <BrowserRouter>
       <Menu />
-      <Container>
+      <Container fixed>
         <Routes>
           <Route path="/" element={<Home />} ></Route>
           <Route path="/operations" element={<Operations />} ></Route>
